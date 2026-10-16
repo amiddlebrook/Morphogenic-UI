@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1118">
+  <meta name="description" content="Morphogenic Studio — explore generative systems through cellular geometry, genetic sequences, networks and signals. Free, offline-capable, and Cloudflare-native.">
+  <title>Morphogenic Studio · Living Systems Lab</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#overview" aria-label="Morphogenic Studio home"><span class="brand-mark">✳</span><span class="brand-text">morphogenic<span>STUDIO / 01</span></span></a>
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav class="nav" aria-label="Workspace views">
+        <button class="nav-item active" type="button" data-view="overview" aria-current="page"><span class="nav-icon">◈</span><span>Overview</span><span class="nav-key">01</span></button>
+        <button class="nav-item" type="button" data-view="genome"><span class="nav-icon">⌘</span><span>Gene sequencer</span><span class="nav-key">02</span></button>
+        <button class="nav-item" type="button" data-view="network"><span class="nav-icon">⌯</span><span>Mycelial network</span><span class="nav-key">03</span></button>
+        <button class="nav-item" type="button" data-view="signals"><span class="nav-icon">≋</span><span>Synaptic signals</span><span class="nav-key">04</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="status-dot"></div><div><strong>LOCAL ENGINE ONLINE</strong><span>100% browser-generated</span></div></div>
+      <div class="sidebar-footer">OPEN SYSTEMS LAB <span>V 2.0</span></div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar"><div class="breadcrumb">LABORATORY <span>/</span> <strong id="breadcrumb-view">OVERVIEW</strong></div><div class="top-actions"><span class="connection"><span class="status-dot"></span> ENGINE ACTIVE</span><button class="btn btn-quiet" id="reset" type="button">↺ <span>Reset</span></button><button class="btn btn-primary" id="export" type="button">↓ Export project</button></div></header>
+      <main class="main" id="main">
+        <section class="intro"><div class="eyebrow"><span class="eyebrow-line"></span> GENERATIVE SYSTEMS / LAB 01</div><div class="intro-row"><div><h1 id="view-title">Living systems,<br><em>designed.</em></h1><p id="view-description">An interactive laboratory for emergent geometry, simulated genetic patterns, distributed networks, and dynamic signals.</p></div><div class="run-chip"><span class="pulse"></span><div>EXPERIMENT ACTIVE<strong id="run-id">MG-73129</strong></div></div></div></section>
+        <div id="view-content" aria-live="polite"></div>
+        <footer class="page-footer"><span>MORPHOGENIC ENGINE · DETERMINISTIC SIMULATION</span><span>NO ACCOUNT · NO API KEY · NO TRACKING</span></footer>
+      </main>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
